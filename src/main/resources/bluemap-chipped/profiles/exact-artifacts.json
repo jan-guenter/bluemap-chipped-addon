@@ -1,0 +1,48 @@
+{
+  "artifacts": [
+    {
+      "curseForgeFileId": 5813117,
+      "curseForgeFingerprint": 527531260,
+      "curseForgeProjectId": 456956,
+      "filename": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "license": "Terrarium License v1 / All Rights Reserved assets",
+      "metadataVersion": "4.0.2",
+      "modId": "chipped",
+      "modrinthProjectId": "BAscRYKm",
+      "modrinthVersionId": "eqVowbGc",
+      "sha1": "6f5395f58139802edfde7cb9170279f92f291971",
+      "sha256": "18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291",
+      "sha512": "f3083b01267e7c674c4b42f45a317c93ee7723443cba2051fe5bc593638b533b0fe90699e2101661c934dff458eab693cce4e188533bfe977778c249563a2fa5",
+      "sizeBytes": 15020578,
+      "verificationRole": "consumer-resource-owner"
+    },
+    {
+      "curseForgeFileId": 8061947,
+      "curseForgeFingerprint": 669268138,
+      "curseForgeProjectId": 841890,
+      "filename": "athena-neoforge-1.21.1-4.0.6.jar",
+      "license": "MIT",
+      "metadataVersion": "4.0.6",
+      "modId": "athena",
+      "modrinthProjectId": "b1ZV3DIJ",
+      "modrinthVersionId": "dJgL278E",
+      "sha1": "4bcbdf388bd5e387beca7c627224aac33584b55b",
+      "sha256": "43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5",
+      "sha512": "ab40a306a26ce834daae921a1e87768cd2538a4bfe27a4480f97af854084cc334e7416b1bd0b7583834a32a86951283f29fd4b1df7b98a967a6b26a3ec05e2cf",
+      "sizeBytes": 99944,
+      "verificationRole": "renderer-format-identity"
+    }
+  ],
+  "baseline": {
+    "java": 21,
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.248",
+    "packRepositoryCommit": "c7bb230f21d14d26859d0b92548f089b3a493ad9",
+    "packVersion": "1.2.0"
+  },
+  "requiredForStaticRendering": [
+    "chipped",
+    "athena"
+  ],
+  "schemaVersion": 1
+}

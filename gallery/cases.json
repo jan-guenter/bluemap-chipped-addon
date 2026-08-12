@@ -1,0 +1,2359 @@
+{
+  "baseline": {
+    "athena": "4.0.6",
+    "chipped": "4.0.2",
+    "minecraft": "1.21.1",
+    "pack": "All the Mons 1.2.0"
+  },
+  "routed_swatch_count": 1427,
+  "schema_version": 1,
+  "structural_case_count": 70,
+  "structural_cases": [
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-isolated",
+      "family": "ctm",
+      "notes": "opaque CTM isolated truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-up",
+      "family": "ctm",
+      "notes": "opaque CTM up truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -81
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-right",
+      "family": "ctm",
+      "notes": "opaque CTM right truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-corner-open",
+      "family": "ctm",
+      "notes": "opaque CTM corner-open truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -81
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 33,
+          "y": 100,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-corner-closed",
+      "family": "ctm",
+      "notes": "opaque CTM corner-closed truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -81
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 41,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 41,
+          "y": 100,
+          "z": -81
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-all-eight",
+      "family": "ctm",
+      "notes": "opaque CTM all-eight truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 47,
+          "y": 100,
+          "z": -81
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -81
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 49,
+          "y": 100,
+          "z": -81
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 47,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 49,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 47,
+          "y": 100,
+          "z": -79
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -79
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 49,
+          "y": 100,
+          "z": -79
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-opaque-direct-face",
+      "family": "ctm",
+      "notes": "opaque CTM direct-face truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:acacia_planks_panel",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 101,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-transparent-isolated",
+      "family": "ctm",
+      "notes": "transparent CTM isolated truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-transparent-up",
+      "family": "ctm",
+      "notes": "transparent CTM up truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -81
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -80
+      },
+      "case_id": "ctm-transparent-right",
+      "family": "ctm",
+      "notes": "transparent CTM right truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -80
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 81,
+          "y": 100,
+          "z": -80
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-transparent-corner-open",
+      "family": "ctm",
+      "notes": "transparent CTM corner-open truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 9,
+          "y": 100,
+          "z": -68
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-transparent-corner-closed",
+      "family": "ctm",
+      "notes": "transparent CTM corner-closed truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 100,
+          "z": -69
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-transparent-all-eight",
+      "family": "ctm",
+      "notes": "transparent CTM all-eight truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 100,
+          "z": -67
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -67
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -67
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-transparent-direct-face",
+      "family": "ctm",
+      "notes": "transparent CTM direct-face truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:clear_leaded_glass",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 101,
+          "z": -68
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-isolated",
+      "family": "ctm",
+      "notes": "wool CTM isolated truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -68
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-up",
+      "family": "ctm",
+      "notes": "wool CTM up truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -69
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-right",
+      "family": "ctm",
+      "notes": "wool CTM right truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 57,
+          "y": 100,
+          "z": -68
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-corner-open",
+      "family": "ctm",
+      "notes": "wool CTM corner-open truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 65,
+          "y": 100,
+          "z": -68
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-corner-closed",
+      "family": "ctm",
+      "notes": "wool CTM corner-closed truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 73,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 73,
+          "y": 100,
+          "z": -69
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -68
+      },
+      "case_id": "ctm-wool-all-eight",
+      "family": "ctm",
+      "notes": "wool CTM all-eight truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 79,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 81,
+          "y": 100,
+          "z": -69
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 79,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 81,
+          "y": 100,
+          "z": -68
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 79,
+          "y": 100,
+          "z": -67
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -67
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 81,
+          "y": 100,
+          "z": -67
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "ctm-wool-direct-face",
+      "family": "ctm",
+      "notes": "wool CTM direct-face truth-class witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:cornered_black_wool",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 101,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "ctm-face-basis-north",
+      "family": "ctm",
+      "notes": "vertical north face-local up/left/diagonal basis",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 101,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 101,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "ctm-face-basis-south",
+      "family": "ctm",
+      "notes": "vertical south face-local up/left/diagonal basis",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 101,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 101,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "ctm-face-basis-west",
+      "family": "ctm",
+      "notes": "vertical west face-local up/left/diagonal basis",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 101,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -57
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 101,
+          "z": -57
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "ctm-face-basis-east",
+      "family": "ctm",
+      "notes": "vertical east face-local up/left/diagonal basis",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 101,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -55
+        },
+        {
+          "block": "chipped:black_concrete_panel",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 101,
+          "z": -55
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "pillar-x-singleton",
+      "family": "pillar",
+      "notes": "axis x cap and self texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "pillar-x-end",
+      "family": "pillar",
+      "notes": "axis x top/bottom endpoints",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 57,
+          "y": 100,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "pillar-x-middle",
+      "family": "pillar",
+      "notes": "axis x center chain texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 63,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -56
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 65,
+          "y": 100,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "pillar-ice-x",
+      "family": "pillar",
+      "notes": "transparent axis x alpha and UV witness",
+      "placements": [
+        {
+          "block": "chipped:curly_ice_pillar[axis=x]",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -56
+      },
+      "case_id": "pillar-y-singleton",
+      "family": "pillar",
+      "notes": "axis y cap and self texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -56
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-y-end",
+      "family": "pillar",
+      "notes": "axis y top/bottom endpoints",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -44
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 101,
+          "z": -44
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-y-middle",
+      "family": "pillar",
+      "notes": "axis y center chain texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -44
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 101,
+          "z": -44
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 102,
+          "z": -44
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-ice-y",
+      "family": "pillar",
+      "notes": "transparent axis y alpha and UV witness",
+      "placements": [
+        {
+          "block": "chipped:curly_ice_pillar[axis=y]",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -44
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-z-singleton",
+      "family": "pillar",
+      "notes": "axis z cap and self texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -44
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-z-end",
+      "family": "pillar",
+      "notes": "axis z top/bottom endpoints",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -44
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -43
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-z-middle",
+      "family": "pillar",
+      "notes": "axis z center chain texture",
+      "placements": [
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -45
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -44
+        },
+        {
+          "block": "chipped:black_concrete_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -43
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -44
+      },
+      "case_id": "pillar-ice-z",
+      "family": "pillar",
+      "notes": "transparent axis z alpha and UV witness",
+      "placements": [
+        {
+          "block": "chipped:curly_ice_pillar[axis=z]",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -44
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": -8,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "giant-opaque-negative-y",
+      "family": "giant",
+      "notes": "2x2 X/Y/Z-face coordinate-phase and transparency witness",
+      "placements": [
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": -8,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": -7,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": -8,
+          "y": 100,
+          "z": -7
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": -7,
+          "y": 100,
+          "z": -7
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": -4,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "giant-ice-negative-x",
+      "family": "giant",
+      "notes": "2x2 X/Y/Z-face coordinate-phase and transparency witness",
+      "placements": [
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": -4,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": -4,
+          "y": 101,
+          "z": -8
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": -4,
+          "y": 100,
+          "z": -7
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": -4,
+          "y": 101,
+          "z": -7
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 0,
+        "y": 100,
+        "z": 12
+      },
+      "case_id": "giant-opaque-positive-z",
+      "family": "giant",
+      "notes": "2x2 X/Y/Z-face coordinate-phase and transparency witness",
+      "placements": [
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 100,
+          "z": 12
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 1,
+          "y": 100,
+          "z": 12
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 101,
+          "z": 12
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 1,
+          "y": 101,
+          "z": 12
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 4,
+        "y": 100,
+        "z": 12
+      },
+      "case_id": "giant-ice-positive-y",
+      "family": "giant",
+      "notes": "2x2 X/Y/Z-face coordinate-phase and transparency witness",
+      "placements": [
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": 4,
+          "y": 100,
+          "z": 12
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": 5,
+          "y": 100,
+          "z": 12
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": 4,
+          "y": 100,
+          "z": 13
+        },
+        {
+          "block": "chipped:massive_ice_bricks",
+          "expected_route": "custom",
+          "x": 5,
+          "y": 100,
+          "z": 13
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 0,
+        "y": 100,
+        "z": 8
+      },
+      "case_id": "giant-phase-shift-x",
+      "family": "giant",
+      "notes": "2x2 X/Y/Z-face coordinate-phase and transparency witness",
+      "placements": [
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 100,
+          "z": 8
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 101,
+          "z": 8
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 100,
+          "z": 9
+        },
+        {
+          "block": "chipped:massive_blackstone_bricks",
+          "expected_route": "custom",
+          "x": 0,
+          "y": 101,
+          "z": 9
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-isolated",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet isolated seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -32
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-line-end",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet line-end seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -31
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-line-middle",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet line-middle seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -33
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -31
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-corner",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet corner seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -33
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 49,
+          "y": 100,
+          "z": -32
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-tee",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet tee seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 55,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 57,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -33
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-solid",
+      "family": "carpet_ctm",
+      "notes": "one-sixteenth carpet solid seam witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 63,
+          "y": 100,
+          "z": -33
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -33
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 65,
+          "y": 100,
+          "z": -33
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 63,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 65,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 63,
+          "y": 100,
+          "z": -31
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -31
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 65,
+          "y": 100,
+          "z": -31
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "carpet-opaque-neighbor",
+      "family": "carpet_ctm",
+      "notes": "adjacent carpets beside an opaque full-cube culling witness",
+      "placements": [
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -32
+        },
+        {
+          "block": "chipped:cornered_black_carpet",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -31
+        },
+        {
+          "block": "minecraft:stone",
+          "expected_route": "stock-control",
+          "x": 73,
+          "y": 100,
+          "z": -32
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -32
+      },
+      "case_id": "pane-ctm-isolated",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane isolated witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -32
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-north-south",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane north-south witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -21
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -19
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-east-west",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane east-west witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 15,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 100,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-corner",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane corner witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -21
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-tee",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane tee witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 31,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 33,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -21
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-cross",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane cross witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 39,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 41,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -21
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -19
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-vertical-exact",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane vertical-exact witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 101,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-ctm-vertical-different",
+      "family": "pane_ctm",
+      "notes": "centered one-eighth pane vertical-different witness",
+      "placements": [
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 101,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -21
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -19
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 55,
+          "y": 101,
+          "z": -20
+        },
+        {
+          "block": "chipped:clear_leaded_glass_pane",
+          "expected_route": "custom",
+          "x": 57,
+          "y": 101,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-pillar-isolated",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane isolated witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-pillar-north-south",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane north-south witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -21
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -19
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -20
+      },
+      "case_id": "pane-pillar-east-west",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane east-west witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 79,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -20
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 81,
+          "y": 100,
+          "z": -20
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 8,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "pane-pillar-corner",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane corner witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 8,
+          "y": 100,
+          "z": -9
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 9,
+          "y": 100,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 16,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "pane-pillar-tee",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane tee witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 15,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 17,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 16,
+          "y": 100,
+          "z": -9
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 24,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "pane-pillar-cross",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane cross witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 23,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 25,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -9
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 24,
+          "y": 100,
+          "z": -7
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 32,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "pane-pillar-vertical-exact",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane vertical-exact witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 32,
+          "y": 101,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 40,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "pane-pillar-vertical-different",
+      "family": "pane_pillar",
+      "notes": "centered one-eighth pane vertical-different witness",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 101,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -9
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 40,
+          "y": 100,
+          "z": -7
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 39,
+          "y": 101,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pane_pillar",
+          "expected_route": "custom",
+          "x": 41,
+          "y": 101,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 48,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "limited-singleton",
+      "family": "limited_pillar",
+      "notes": "transparent fixed-Y singleton",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 48,
+          "y": 100,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 56,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "limited-end",
+      "family": "limited_pillar",
+      "notes": "transparent fixed-Y endpoint pair",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 56,
+          "y": 101,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "limited-middle",
+      "family": "limited_pillar",
+      "notes": "transparent fixed-Y center chain",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 101,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 64,
+          "y": 102,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 72,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "limited-direct-east",
+      "family": "limited_pillar",
+      "notes": "same-block direct east face suppression",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 72,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 73,
+          "y": 100,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "x": 80,
+        "y": 100,
+        "z": -8
+      },
+      "case_id": "limited-direct-north",
+      "family": "limited_pillar",
+      "notes": "same-block direct north face suppression",
+      "placements": [
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -8
+        },
+        {
+          "block": "chipped:arched_black_stained_glass_pillar",
+          "expected_route": "custom",
+          "x": 80,
+          "y": 100,
+          "z": -9
+        }
+      ]
+    }
+  ],
+  "verified_placement_count": 1642
+}

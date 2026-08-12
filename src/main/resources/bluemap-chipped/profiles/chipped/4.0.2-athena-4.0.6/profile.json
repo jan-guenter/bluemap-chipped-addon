@@ -1,0 +1,54 @@
+{
+  "athenaVersion": "4.0.6",
+  "chippedVersion": "4.0.2",
+  "coverage": {
+    "allChippedBlockstates": 6981,
+    "allChippedBlockstatesDigest": "255977e9e98c63fb335a771447a6ca31b5db7c9bc9d0894b5697c1e8716e08af",
+    "loaderCounts": {
+      "carpet_ctm": 48,
+      "ctm": 896,
+      "giant": 108,
+      "limited_pillar": 17,
+      "pane_ctm": 93,
+      "pane_pillar": 17,
+      "pillar": 248
+    },
+    "loaderDigests": {
+      "carpet_ctm": "73f730346b243f89359ab8225a6e36c2318de071e738353d40c49e2b19089360",
+      "ctm": "d1ed376d8970e8812e800898ed02e76adf121fa1b3f62ff450a21ea31901c125",
+      "giant": "5c50e6b6f590a47a1c7c5b1dd650481b7ac612708be706a106c0043fd41e7f4f",
+      "limited_pillar": "857c4f3abd6951d2d6294ad50004217c8eafc9038fe1320d25cfea3770608c4f",
+      "pane_ctm": "2969bcadf207a2acba4d22c89bf7f1cc869ac9564799f3ba2783446f1e055579",
+      "pane_pillar": "cface31b4f9225460f16ddb7238119897f6324183f3c5dd14c204f31f4b0a732",
+      "pillar": "bebdc24614bb98ee3e2ae833edb909cd15e15311e791ab3d0befa0870162d9e7"
+    },
+    "modelCount": 1427,
+    "modelDigest": "813f809f10f29f455f4660709446397d2ec73547acd791bc332f8effb23c5343",
+    "routedBlocks": 1427,
+    "routedBlocksDigest": "2d8f6d737e41759a759bddac09a9432c80ec47f6b37bcef92cb916ef336b7cf8",
+    "stockBlocks": 5554,
+    "textureCount": 5947,
+    "textureDigest": "367515de4eaf4257ec95c8a377a74137935516cee27cb2604895eac4081dd86d"
+  },
+  "definitionCatalog": {
+    "path": "definitions.tsv",
+    "rows": 1427,
+    "sha256": "1ce109e515e89e5d73ebb796cfdb84f49c57e52a97a1c6b0a95e2bc80777ca7a"
+  },
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.248",
+  "profileId": "chipped-athena-4.0.2-4.0.6",
+  "resourceClosure": {
+    "bytes": 3542450,
+    "path": "required-resources.tsv",
+    "rows": 8801,
+    "sha256": "4a2786baf6429cce96ea5e7e04509fa09f2fdbd94e859474ad46bd4aab960757"
+  },
+  "runtimePolicy": {
+    "nonNativeAppearanceProxies": "stock fallback",
+    "pixelOverrides": "allowed when all schema and texture IDs remain exact",
+    "resourceSource": "operator-installed roots only",
+    "schemaOverrides": "deactivate the route and preserve stock rendering"
+  },
+  "schemaVersion": 1
+}
