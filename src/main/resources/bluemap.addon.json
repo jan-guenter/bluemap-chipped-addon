@@ -1,0 +1,8 @@
+{
+  "id": "bluemap-chipped",
+  "name": "BlueMap Chipped Add-on",
+  "entrypoint": "io.github.janguenter.bluemap.chipped.BlueMapChippedAddon",
+  "version": "${version}",
+  "dependencies": [],
+  "soft-dependencies": []
+}

@@ -1,0 +1,71 @@
+case_id	family	x	y	z	placements	notes
+ctm-opaque-isolated	ctm	8	100	-80	1	opaque CTM isolated truth-class witness
+ctm-opaque-up	ctm	16	100	-80	2	opaque CTM up truth-class witness
+ctm-opaque-right	ctm	24	100	-80	2	opaque CTM right truth-class witness
+ctm-opaque-corner-open	ctm	32	100	-80	3	opaque CTM corner-open truth-class witness
+ctm-opaque-corner-closed	ctm	40	100	-80	4	opaque CTM corner-closed truth-class witness
+ctm-opaque-all-eight	ctm	48	100	-80	9	opaque CTM all-eight truth-class witness
+ctm-opaque-direct-face	ctm	56	100	-80	2	opaque CTM direct-face truth-class witness
+ctm-transparent-isolated	ctm	64	100	-80	1	transparent CTM isolated truth-class witness
+ctm-transparent-up	ctm	72	100	-80	2	transparent CTM up truth-class witness
+ctm-transparent-right	ctm	80	100	-80	2	transparent CTM right truth-class witness
+ctm-transparent-corner-open	ctm	8	100	-68	3	transparent CTM corner-open truth-class witness
+ctm-transparent-corner-closed	ctm	16	100	-68	4	transparent CTM corner-closed truth-class witness
+ctm-transparent-all-eight	ctm	24	100	-68	9	transparent CTM all-eight truth-class witness
+ctm-transparent-direct-face	ctm	32	100	-68	2	transparent CTM direct-face truth-class witness
+ctm-wool-isolated	ctm	40	100	-68	1	wool CTM isolated truth-class witness
+ctm-wool-up	ctm	48	100	-68	2	wool CTM up truth-class witness
+ctm-wool-right	ctm	56	100	-68	2	wool CTM right truth-class witness
+ctm-wool-corner-open	ctm	64	100	-68	3	wool CTM corner-open truth-class witness
+ctm-wool-corner-closed	ctm	72	100	-68	4	wool CTM corner-closed truth-class witness
+ctm-wool-all-eight	ctm	80	100	-68	9	wool CTM all-eight truth-class witness
+ctm-wool-direct-face	ctm	8	100	-56	2	wool CTM direct-face truth-class witness
+ctm-face-basis-north	ctm	16	100	-56	4	vertical north face-local up/left/diagonal basis
+ctm-face-basis-south	ctm	24	100	-56	4	vertical south face-local up/left/diagonal basis
+ctm-face-basis-west	ctm	32	100	-56	4	vertical west face-local up/left/diagonal basis
+ctm-face-basis-east	ctm	40	100	-56	4	vertical east face-local up/left/diagonal basis
+pillar-x-singleton	pillar	48	100	-56	1	axis x cap and self texture
+pillar-x-end	pillar	56	100	-56	2	axis x top/bottom endpoints
+pillar-x-middle	pillar	64	100	-56	3	axis x center chain texture
+pillar-ice-x	pillar	72	100	-56	1	transparent axis x alpha and UV witness
+pillar-y-singleton	pillar	80	100	-56	1	axis y cap and self texture
+pillar-y-end	pillar	8	100	-44	2	axis y top/bottom endpoints
+pillar-y-middle	pillar	16	100	-44	3	axis y center chain texture
+pillar-ice-y	pillar	24	100	-44	1	transparent axis y alpha and UV witness
+pillar-z-singleton	pillar	32	100	-44	1	axis z cap and self texture
+pillar-z-end	pillar	40	100	-44	2	axis z top/bottom endpoints
+pillar-z-middle	pillar	48	100	-44	3	axis z center chain texture
+pillar-ice-z	pillar	56	100	-44	1	transparent axis z alpha and UV witness
+giant-opaque-negative-y	giant	-8	100	-8	4	2x2 X/Y/Z-face coordinate-phase and transparency witness
+giant-ice-negative-x	giant	-4	100	-8	4	2x2 X/Y/Z-face coordinate-phase and transparency witness
+giant-opaque-positive-z	giant	0	100	12	4	2x2 X/Y/Z-face coordinate-phase and transparency witness
+giant-ice-positive-y	giant	4	100	12	4	2x2 X/Y/Z-face coordinate-phase and transparency witness
+giant-phase-shift-x	giant	0	100	8	4	2x2 X/Y/Z-face coordinate-phase and transparency witness
+carpet-isolated	carpet_ctm	24	100	-32	1	one-sixteenth carpet isolated seam witness
+carpet-line-end	carpet_ctm	32	100	-32	2	one-sixteenth carpet line-end seam witness
+carpet-line-middle	carpet_ctm	40	100	-32	3	one-sixteenth carpet line-middle seam witness
+carpet-corner	carpet_ctm	48	100	-32	3	one-sixteenth carpet corner seam witness
+carpet-tee	carpet_ctm	56	100	-32	4	one-sixteenth carpet tee seam witness
+carpet-solid	carpet_ctm	64	100	-32	9	one-sixteenth carpet solid seam witness
+carpet-opaque-neighbor	carpet_ctm	72	100	-32	3	adjacent carpets beside an opaque full-cube culling witness
+pane-ctm-isolated	pane_ctm	80	100	-32	1	centered one-eighth pane isolated witness
+pane-ctm-north-south	pane_ctm	8	100	-20	3	centered one-eighth pane north-south witness
+pane-ctm-east-west	pane_ctm	16	100	-20	3	centered one-eighth pane east-west witness
+pane-ctm-corner	pane_ctm	24	100	-20	3	centered one-eighth pane corner witness
+pane-ctm-tee	pane_ctm	32	100	-20	4	centered one-eighth pane tee witness
+pane-ctm-cross	pane_ctm	40	100	-20	5	centered one-eighth pane cross witness
+pane-ctm-vertical-exact	pane_ctm	48	100	-20	2	centered one-eighth pane vertical-exact witness
+pane-ctm-vertical-different	pane_ctm	56	100	-20	6	centered one-eighth pane vertical-different witness
+pane-pillar-isolated	pane_pillar	64	100	-20	1	centered one-eighth pane isolated witness
+pane-pillar-north-south	pane_pillar	72	100	-20	3	centered one-eighth pane north-south witness
+pane-pillar-east-west	pane_pillar	80	100	-20	3	centered one-eighth pane east-west witness
+pane-pillar-corner	pane_pillar	8	100	-8	3	centered one-eighth pane corner witness
+pane-pillar-tee	pane_pillar	16	100	-8	4	centered one-eighth pane tee witness
+pane-pillar-cross	pane_pillar	24	100	-8	5	centered one-eighth pane cross witness
+pane-pillar-vertical-exact	pane_pillar	32	100	-8	2	centered one-eighth pane vertical-exact witness
+pane-pillar-vertical-different	pane_pillar	40	100	-8	6	centered one-eighth pane vertical-different witness
+limited-singleton	limited_pillar	48	100	-8	1	transparent fixed-Y singleton
+limited-end	limited_pillar	56	100	-8	2	transparent fixed-Y endpoint pair
+limited-middle	limited_pillar	64	100	-8	3	transparent fixed-Y center chain
+limited-direct-east	limited_pillar	72	100	-8	2	same-block direct east face suppression
+limited-direct-north	limited_pillar	80	100	-8	2	same-block direct north face suppression
