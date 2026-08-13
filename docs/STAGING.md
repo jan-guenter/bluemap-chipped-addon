@@ -1,8 +1,8 @@
 # Single staging gate
 
 Reuse the disposable Minecraft/BlueMap server and PVC. Install the exact All
-the Mons 1.2.0 Chipped/Athena pair and only the candidate add-on in BlueMap's
-packs directory. Use a bounded map named `chipped_staging`.
+the Mons 1.2.0 Chipped/Athena pair and only the add-on under review in
+BlueMap's packs directory. Use a bounded map named `chipped_staging`.
 
 Before startup apply the shared low-cost test settings:
 
@@ -44,5 +44,21 @@ Run one enabled lifecycle:
    quick blank/black/missing/gross-breakage check before presenting it to the
    owner.
 
-Record results only after they occur. This implementation candidate has no
-staging or owner-acceptance claim yet.
+## Accepted result
+
+The owner accepted the result on 2026-08-13. The exact staged production JAR
+was 598,326 bytes with SHA-256
+`b43c238b764e068db4009ab16fc2af140b54d84feaf37bd6577602e1dc97fd21`.
+The deterministic gallery verified 1,642/1,642 placements: all 1,427 routed
+swatches and 70 structural cases, with zero failures. After a clean exit and
+restart, the same gallery verification passed again and BlueMap reached its
+loaded state without a targeted fault.
+
+The bounded purge/render completed. The canonical rendered-model audit record
+was 18,730 bytes with SHA-256
+`9c4f29c36f89278ec66ef16ba018d88a9495013d3582a4bb74f998538e6a6ae1`.
+The exact external view passed the lightweight agent-browser sanity check
+before the owner inspected and approved it.
+
+The disposable world, map, screenshots, and runtime logs may now be replaced
+by the next accepted add-on cycle under the shared staging policy.

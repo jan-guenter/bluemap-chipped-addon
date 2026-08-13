@@ -5,8 +5,7 @@ models on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-`0.1.0-alpha.1` is an implementation candidate, not yet released or visually
-accepted. It binds one exact tuple:
+Version `0.1.0-alpha.1` is the owner-accepted prerelease for one exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
   `18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291`;
@@ -20,6 +19,13 @@ The route activates only when both installed JARs match exactly and every
 active owned JSON resource retains its pinned schema and texture IDs. Pixel
 overrides may change the appearance without changing the schema. A mismatched
 tuple or schema stays on BlueMap's stock resource path.
+
+The accepted production JAR is 598,326 bytes with SHA-256
+`b43c238b764e068db4009ab16fc2af140b54d84feaf37bd6577602e1dc97fd21`.
+It passed pull-request CI, the exhaustive 1,642-placement staging gate, a
+clean restart and repeat verification, the canonical rendered-model audit,
+the required agent-browser sanity check, and owner visual inspection on
+2026-08-13.
 
 ## Visual scope
 
@@ -62,6 +68,11 @@ gradle --no-daemon \
 CI reacquires both inputs ephemerally, verifies their exact bytes and the full
 resource/profile contract, and discards them. The build bundles no Chipped or
 Athena assets or code.
+
+Tagged releases publish production/source JARs, POM, module metadata, and
+checksums on GitHub Releases and at Maven coordinates
+`io.github.jan-guenter:bluemap-chipped-addon:<version>` on GitHub Packages. A
+release tag must equal `v<addon_version>`.
 
 ## Installation
 

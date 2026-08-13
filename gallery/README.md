@@ -22,3 +22,7 @@ The verifier is also the exact server registry/placement census: every routed
 block must place and persist, all generated structural placements must match,
 and `#failures chipped_gallery` must be zero. The datapack contains only IDs,
 coordinates, commands, and metadata; it bundles no Chipped/Athena asset.
+
+The accepted 2026-08-13 staging run verified all 1,642 generated placements,
+covering the 1,427 routed swatches and all 70 structural cases, with zero
+failures before and after a clean server restart.
