@@ -39,6 +39,7 @@ Develop in one coherent tranche. Pull-request CI is the authoritative full
 gate; do not repeat it locally after small edits:
 
 ```bash
+git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
 gradle --no-daemon \
   -PchippedJar=/absolute/path/chipped-neoforge-1.21.1-4.0.2.jar \
   -PathenaJar=/absolute/path/athena-neoforge-1.21.1-4.0.6.jar \

@@ -58,6 +58,21 @@ Use Java 21 and the exact sibling BlueMap checkout. Supply the two exact
 operator-downloaded inputs once:
 
 ```bash
+git clone --recurse-submodules \
+  https://github.com/jan-guenter/bluemap-chipped-addon.git
+```
+
+For an existing clone, initialize the pinned development toolkit before
+running Gradle:
+
+```bash
+git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+```
+
+The settings preflight accepts only the committed toolkit gitlink at its exact
+expected commit and rejects an uninitialized, changed, or dirty submodule.
+
+```bash
 gradle --no-daemon \
   -PchippedJar=/absolute/path/chipped-neoforge-1.21.1-4.0.2.jar \
   -PathenaJar=/absolute/path/athena-neoforge-1.21.1-4.0.6.jar \

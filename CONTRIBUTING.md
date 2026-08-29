@@ -9,4 +9,9 @@ or meshes. Third-party inputs stay local and ignored.
 
 Malformed state and changed schemas must return the whole block to BlueMap's
 original path. Submit one coherent change and rely on pull-request CI for the
-authoritative clean gate described in [AGENTS.md](AGENTS.md).
+authoritative clean gate described in [AGENTS.md](AGENTS.md). Clone with
+`--recurse-submodules`, or initialize an existing checkout with:
+
+```bash
+git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+```
