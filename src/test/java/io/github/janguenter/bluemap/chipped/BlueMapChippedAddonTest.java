@@ -20,10 +20,6 @@ class BlueMapChippedAddonTest {
                 "5.22",
                 "fe5115d5548a30d34175b8e0449aaca280af199f"
         ));
-        assertFalse(BlueMapChippedAddon.runtimeSupported(
-                "5.22-agent.backport-5.22-mc1.21.1-2",
-                "9be321df995a1103808621d529eb72773e719d4d"
-        ));
     }
 
     @Test

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.6 - 2026-08-30
+
+- Pin `bluemap-addon-render-core` `0.1.0-alpha.2` and compile `FaceLighting`
+  only from its BlueMap 5.23 package.
+- Preserve the accepted Chipped renderers, profiles, gallery, routes, and
+  fallback behavior.
+- Keep alpha.5's single release-staging tool as the source of all five
+  checksum identities.
+
 ## 0.1.0-alpha.5 - 2026-08-30
 
 - Preserve alpha.4's exact feature-backport runtime and shared adapter source.

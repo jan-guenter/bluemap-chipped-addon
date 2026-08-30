@@ -130,8 +130,9 @@ def legacyAthenaClasses = [
 def legacyAthenaSources = legacyAthenaClasses.collect {
     it.replace('.class', '.java').replace('$Vec.java', '.java')
 }.unique()
-def sharedRenderCorePackage =
-        'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/'
+def sharedRenderCoreRoot =
+        'io/github/janguenter/bluemap/addon/render/core/adapter/'
+def sharedRenderCorePackage = "${sharedRenderCoreRoot}bluemap523/"
 def sharedRenderCoreClasses = [
         "${sharedRenderCorePackage}FaceLighting.class",
         "${sharedRenderCorePackage}FaceLighting\$Sample.class"
@@ -139,13 +140,6 @@ def sharedRenderCoreClasses = [
 def sharedRenderCoreSources = [
         "${sharedRenderCorePackage}FaceLighting.java"
 ].collect { it.toString() }
-def legacyRenderCoreClasses = [
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting.class',
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting$Sample.class'
-]
-def legacyRenderCoreSources = [
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting.java'
-]
 def sharedAdapterApiPackage =
         'io/github/janguenter/bluemap/addon/adapter/api/bluemap523/'
 def sharedAdapterApiClasses = [
@@ -160,16 +154,8 @@ def sharedAdapterApiSources = [
         "${sharedAdapterApiPackage}ResourceExtensionType.java",
         "${sharedAdapterApiPackage}SyntheticDispatch.java"
 ].collect { it.toString() }
-def legacyAdapterApiClasses = [
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/AdapterCompatibility.class',
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/ChippedResourceExtensionType.class',
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/BlueMap522Adapter.class'
-]
-def legacyAdapterApiSources = legacyAdapterApiClasses.collect {
-    it.replace('.class', '.java')
-}
-def legacyLocalAdapterPackage =
-        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/'
+def localAdapterRoot = 'io/github/janguenter/bluemap/chipped/adapter/'
+def currentLocalAdapterPackage = "${localAdapterRoot}bluemap523/"
 tasks.register('verifyProductionJar') {
     dependsOn tasks.named('jar')
     inputs.file(productionJar)
@@ -235,12 +221,11 @@ tasks.register('verifyProductionJar') {
                         || it.startsWith('net/minecraft/')
                         || it.startsWith('net/neoforged/')
                         || legacyAthenaClasses.contains(it)
-                        || legacyRenderCoreClasses.contains(it)
-                        || legacyAdapterApiClasses.contains(it)
-                        || (it.startsWith(legacyLocalAdapterPackage) && !it.endsWith('/'))
+                        || (it.startsWith(localAdapterRoot) && !it.endsWith('/')
+                            && !it.startsWith(currentLocalAdapterPackage))
                         || (it.startsWith(sharedAthenaPackage) && !it.endsWith('/')
                             && !sharedAthenaClasses.contains(it))
-                        || (it.startsWith(sharedRenderCorePackage) && !it.endsWith('/')
+                        || (it.startsWith(sharedRenderCoreRoot) && !it.endsWith('/')
                             && !sharedRenderCoreClasses.contains(it))
                         || (it.startsWith(sharedAdapterApiPackage) && !it.endsWith('/')
                             && !sharedAdapterApiClasses.contains(it))
@@ -319,12 +304,11 @@ tasks.register('verifySourcesJar') {
                         || it.startsWith('net/minecraft/')
                         || it.startsWith('net/neoforged/')
                         || legacyAthenaSources.contains(it)
-                        || legacyRenderCoreSources.contains(it)
-                        || legacyAdapterApiSources.contains(it)
-                        || (it.startsWith(legacyLocalAdapterPackage) && !it.endsWith('/'))
+                        || (it.startsWith(localAdapterRoot) && !it.endsWith('/')
+                            && !it.startsWith(currentLocalAdapterPackage))
                         || (it.startsWith(sharedAthenaPackage) && !it.endsWith('/')
                             && !sharedAthenaSources.contains(it))
-                        || (it.startsWith(sharedRenderCorePackage) && !it.endsWith('/')
+                        || (it.startsWith(sharedRenderCoreRoot) && !it.endsWith('/')
                             && !sharedRenderCoreSources.contains(it))
                         || (it.startsWith(sharedAdapterApiPackage) && !it.endsWith('/')
                             && !sharedAdapterApiSources.contains(it))
