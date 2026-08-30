@@ -46,13 +46,13 @@ class ReleaseContractTest(unittest.TestCase):
                     "file_name": "bluemap-chipped-addon-0.1.0-alpha.6.module.json",
                     "size": 2_820,
                     "sha256":
-                        "1aa7e14ea0b008a4f1e02c4e7f56425fd131f98d2222b41647a58b7711e9acb0",
+                        "f129eb560b6ecae1d33cdbf55bc7913d69cc009cf92f671bc2915235326a1756",
                 },
                 "sha256sums": {
                     "file_name": "SHA256SUMS",
                     "size": 448,
                     "sha256":
-                        "079b7bbd284c58dfbd3736c9408506ec3ea8693dc7193f832149aca15f845dc8",
+                        "753b7960fc74704aa2df4c69cbacef708cefd64224c5c38480e812e9212542dd",
                 },
             },
             self.release["final_release_artifacts"],
@@ -110,9 +110,11 @@ class ReleaseContractTest(unittest.TestCase):
             },
             self.release["release_staging"],
         )
-        self.assertTrue(self.release["verification"]["gradle_9_4_gate"])
         self.assertTrue(
-            self.release["verification"]["gradle_9_6_reproducibility_gate"]
+            self.release["verification"]["gradle_9_4_reproducibility_gate"]
+        )
+        self.assertTrue(
+            self.release["verification"]["gradle_9_6_compatibility_gate"]
         )
 
 
