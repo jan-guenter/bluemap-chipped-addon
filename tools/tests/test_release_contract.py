@@ -50,6 +50,18 @@ class ReleaseContractTest(unittest.TestCase):
 
         self.assertEqual(
             {
+                "module_repository": "https://github.com/jan-guenter/bluemap-athena-resource-models",
+                "module_version": "0.1.0-alpha.1",
+                "module_tag": "v0.1.0-alpha.1",
+                "module_commit": "4a503a63f7f10b7c414c6c1228207a5ba00bfd54",
+                "module_source_tree": "882689c2f9a0875547f4e30aefd68659103d5046",
+                "removed_local_model_sources": 4,
+                "renderer_or_gallery_behavior_change": False,
+            },
+            release["athena_model_migration"],
+        )
+        self.assertEqual(
+            {
                 "module_repository": "https://github.com/jan-guenter/bluemap-addon-render-core",
                 "module_version": "0.1.0-alpha.1",
                 "module_tag": "v0.1.0-alpha.1",
