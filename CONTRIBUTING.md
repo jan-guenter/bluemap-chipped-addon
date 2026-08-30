@@ -13,5 +13,7 @@ authoritative clean gate described in [AGENTS.md](AGENTS.md). Clone with
 `--recurse-submodules`, or initialize an existing checkout with:
 
 ```bash
-git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+git submodule update --init --recursive -- \
+  tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models \
+  modules/bluemap-addon-render-core modules/bluemap-addon-adapter-api
 ```

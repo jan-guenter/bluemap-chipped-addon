@@ -24,5 +24,10 @@ The face-light sampler is source-bundled from Jan Guenter's MIT
 first-party origin and portfolio deduplication evidence. Its JAR is not
 included.
 
+Four BlueMap bootstrap helpers are source-bundled from Jan Guenter's MIT
+`bluemap-addon-adapter-api` `0.1.0-alpha.2` release at commit
+`e81f08bc4bfbf02d810ec8949a019130e2e61634`, source tree
+`2f974c9bb2ba13888d69682f86f30f58922d30eb`. Its JAR is not included.
+
 Names, identifiers, resource paths, byte sizes, and cryptographic digests are
 used only to describe compatibility and verify operator-installed inputs.

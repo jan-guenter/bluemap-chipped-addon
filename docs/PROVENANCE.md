@@ -48,3 +48,13 @@ visibility differ from the removed local class; executable behavior is
 unchanged. The module records the original Sophisticated add-on commit, the
 frozen source hash, and all seven exact portfolio matches. Its JAR is neither
 installed nor nested.
+
+Version `0.1.0-alpha.4` source-bundles four first-party bootstrap helpers from
+the MIT `bluemap-addon-adapter-api` `0.1.0-alpha.2` release at commit
+`e81f08bc4bfbf02d810ec8949a019130e2e61634`, source tree
+`2f974c9bb2ba13888d69682f86f30f58922d30eb`. It removes the local runtime
+compatibility and resource-extension wrapper classes plus the inline registry
+and synthetic-dispatch implementations. Chipped selects only the exact 5.23
+feature-backport identity and keeps every renderer, factory, route, failure reason,
+profile, and fallback decision local. The module JAR is neither installed nor
+nested.

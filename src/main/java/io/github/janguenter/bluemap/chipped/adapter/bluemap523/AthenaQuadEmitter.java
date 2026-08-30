@@ -5,7 +5,7 @@
  * behavior-only exact-profile oracle. Third-party models and textures remain
  * operator-installed and are referenced only by resource key.
  */
-package io.github.janguenter.bluemap.chipped.adapter.bluemap522;
+package io.github.janguenter.bluemap.chipped.adapter.bluemap523;
 
 import de.bluecolored.bluemap.core.map.TextureGallery;
 import de.bluecolored.bluemap.core.map.hires.RenderSettings;

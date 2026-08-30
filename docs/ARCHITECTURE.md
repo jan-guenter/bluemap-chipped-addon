@@ -6,7 +6,9 @@ mod and has no client renderer, world state, packet, or required configuration.
 ```text
 BlueMap add-on entrypoint
         |
-exact BlueMap 5.22 internal adapter
+exact BlueMap 5.23 feature-backport adapter
+        |
+four commit-pinned adapter helpers
         |
 dual exact-JAR + active-resource-schema gate
         |
@@ -44,6 +46,11 @@ The `FaceLighting` sampler compiles from the exact commit-pinned
 `bluemap-addon-render-core` source tree. The source module has no entrypoint or
 installed runtime. The sampler preserves the existing transformed-face
 neighbor selection and maximum sky, block, and emission light behavior.
+
+Runtime identity selection, identity-safe registry operations, the resource
+extension wrapper, and synthetic dispatch validation compile from the pinned
+`bluemap-addon-adapter-api` source tree. Chipped keeps the renderer factory,
+extension factory, failure reasons, route, and fallback policy.
 
 - `ctm` samples the eight exact-state neighbors in each face plane, selects a
   texture per quadrant, and suppresses a face against the same block ID.

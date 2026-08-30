@@ -3,7 +3,8 @@
  */
 package io.github.janguenter.bluemap.chipped;
 
-import io.github.janguenter.bluemap.chipped.adapter.bluemap522.AdapterCompatibility;
+import de.bluecolored.bluemap.core.BlueMap;
+import io.github.janguenter.bluemap.addon.adapter.api.bluemap523.BlueMapRuntimeCompatibility;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -17,15 +18,11 @@ public final class BlueMapChippedAddon implements Runnable {
     @Override
     public void run() {
         try {
-            if (!AdapterCompatibility.currentRuntimeSupported()) {
+            if (!runtimeSupported(BlueMap.VERSION, BlueMap.GIT_HASH)) {
                 inactive("unsupported BlueMap internal ABI", null);
                 return;
             }
-            Class<?> adapter = Class.forName(
-                    "io.github.janguenter.bluemap.chipped.adapter.bluemap522.BlueMap522Adapter",
-                    true,
-                    BlueMapChippedAddon.class.getClassLoader()
-            );
+            Class<?> adapter = loadAdapter(true);
             Method install = adapter.getMethod("install");
             install.invoke(null);
         } catch (InvocationTargetException exception) {
@@ -33,6 +30,21 @@ public final class BlueMapChippedAddon implements Runnable {
         } catch (ReflectiveOperationException | LinkageError | RuntimeException exception) {
             inactive("exact adapter is unavailable", exception);
         }
+    }
+
+    static boolean runtimeSupported(String version, String gitHash) {
+        return BlueMapRuntimeCompatibility.matches(
+                version,
+                gitHash
+        );
+    }
+
+    static Class<?> loadAdapter(boolean initialize) throws ClassNotFoundException {
+        return Class.forName(
+                "io.github.janguenter.bluemap.chipped.adapter.bluemap523.BlueMap523Adapter",
+                initialize,
+                BlueMapChippedAddon.class.getClassLoader()
+        );
     }
 
     private static void inactive(String reason, Throwable cause) {
