@@ -5,9 +5,9 @@ on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-Version `0.1.0-alpha.5` corrects the checksum-file identity recorded for the
-alpha.4 source-consolidation release. The add-on behavior remains the
-owner-accepted Chipped/Athena renderer profile and accepts this exact tuple:
+Version `0.1.0-alpha.6` moves the shared face-light source to its 5.23-only
+package. The add-on behavior remains the owner-accepted Chipped/Athena
+renderer profile and accepts this exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
   `18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291`;
@@ -35,9 +35,9 @@ identity. It retains the four pure Athena connection and face classes from the
 released, commit-pinned `bluemap-athena-resource-models` `0.1.0-alpha.1` source
 module. It also compiles
 the exact face-light sampler from the released `bluemap-addon-render-core`
-`0.1.0-alpha.1` module at commit
-`faf53c9586a2c876b5a91db5ae3c2650a98f19ba`, source tree
-`73870b3976ad3a17bf4bf350d9531b66d3d4a3af`. Emitters, profiles, resource
+`0.1.0-alpha.2` module at commit
+`24b84efdc8235f3f1323e1a8e9fd033080e3a79e`, source tree
+`424040931680fb82d37693f893ca887c0ed48eae`. Emitters, profiles, resource
 admission, routing, fallback, and visual behavior remain local and unchanged.
 It compiles four bootstrap helpers from the
 `bluemap-addon-adapter-api` `0.1.0-alpha.2` release at commit
