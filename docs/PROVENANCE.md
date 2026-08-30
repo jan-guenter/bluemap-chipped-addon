@@ -50,7 +50,7 @@ frozen source hash, and all seven exact portfolio matches. Its JAR is neither
 installed nor nested.
 
 Version `0.1.0-alpha.4` source-bundles four first-party bootstrap helpers from
-the MIT `bluemap-addon-adapter-api` `0.1.0-alpha.2` release target at commit
+the MIT `bluemap-addon-adapter-api` `0.1.0-alpha.2` release at commit
 `e81f08bc4bfbf02d810ec8949a019130e2e61634`, source tree
 `2f974c9bb2ba13888d69682f86f30f58922d30eb`. It removes the local runtime
 compatibility and resource-extension wrapper classes plus the inline registry

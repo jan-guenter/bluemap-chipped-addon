@@ -82,7 +82,7 @@
     "repository": "https://github.com/jan-guenter/bluemap-addon-adapter-api",
     "version": "0.1.0-alpha.2",
     "tag": "v0.1.0-alpha.2",
-    "status": "release-target",
+    "status": "released",
     "commit": "e81f08bc4bfbf02d810ec8949a019130e2e61634",
     "source_tree": "2f974c9bb2ba13888d69682f86f30f58922d30eb",
     "declared_license": "MIT",

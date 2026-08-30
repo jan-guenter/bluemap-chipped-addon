@@ -3,7 +3,7 @@
 ## 0.1.0-alpha.4 - 2026-08-30
 
 - Source-bundle four bootstrap helpers from the commit-pinned
-  `bluemap-addon-adapter-api` `0.1.0-alpha.2` release target.
+  `bluemap-addon-adapter-api` `0.1.0-alpha.2` release.
 - Remove the local runtime compatibility and resource-extension wrappers plus
   the inline registry and synthetic-dispatch implementations.
 - Select only the audited BlueMap 5.23 feature-backport runtime identity. Keep
