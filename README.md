@@ -5,8 +5,9 @@ on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-Version `0.1.0-alpha.4` is a source-consolidation candidate for the
-owner-accepted Chipped/Athena renderer profile. It accepts this exact tuple:
+Version `0.1.0-alpha.5` corrects the checksum-file identity recorded for the
+alpha.4 source-consolidation release. The add-on behavior remains the
+owner-accepted Chipped/Athena renderer profile and accepts this exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
   `18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291`;
@@ -101,7 +102,9 @@ gradle --no-daemon \
 ```
 
 CI reacquires both runtime inputs ephemerally, verifies their exact bytes and
-the full resource/profile contract, and discards them. The add-on
+the full resource/profile contract, and discards them. It also stages the five
+release payloads in the tag workflow's exact checksum format and compares every
+byte identity with the release provenance. The add-on
 source-bundles only the four first-party MIT model classes, one first-party
 MIT face-light class, and four first-party MIT adapter helpers. It bundles no
 upstream Chipped or Athena code or assets and no nested module JAR.
