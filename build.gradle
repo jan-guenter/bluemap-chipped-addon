@@ -16,6 +16,7 @@ base {
 
 sourceSets {
     main.java.srcDir 'modules/bluemap-athena-resource-models/src/main/java'
+    main.java.srcDir 'modules/bluemap-addon-render-core/src/main/java'
 }
 
 repositories {
@@ -128,6 +129,22 @@ def legacyAthenaClasses = [
 def legacyAthenaSources = legacyAthenaClasses.collect {
     it.replace('.class', '.java').replace('$Vec.java', '.java')
 }.unique()
+def sharedRenderCorePackage =
+        'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/'
+def sharedRenderCoreClasses = [
+        "${sharedRenderCorePackage}FaceLighting.class",
+        "${sharedRenderCorePackage}FaceLighting\$Sample.class"
+].collect { it.toString() }
+def sharedRenderCoreSources = [
+        "${sharedRenderCorePackage}FaceLighting.java"
+].collect { it.toString() }
+def legacyRenderCoreClasses = [
+        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting.class',
+        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting$Sample.class'
+]
+def legacyRenderCoreSources = [
+        'io/github/janguenter/bluemap/chipped/adapter/bluemap522/FaceLighting.java'
+]
 tasks.register('verifyProductionJar') {
     dependsOn tasks.named('jar')
     inputs.file(productionJar)
@@ -149,9 +166,11 @@ tasks.register('verifyProductionJar') {
                     'META-INF/NOTICE-bluemap-chipped-addon.md',
                     'META-INF/THIRD_PARTY-bluemap-chipped-addon.md',
                     'META-INF/bluemap-chipped/upstreams.json'
-            ] + sharedAthenaClasses
+            ] + sharedAthenaClasses + sharedRenderCoreClasses
             def missing = required.findAll { !entries.contains(it) }
             def duplicateShared = sharedAthenaClasses.findAll { shared ->
+                entries.count { it == shared } != 1
+            } + sharedRenderCoreClasses.findAll { shared ->
                 entries.count { it == shared } != 1
             }
             if (!missing.isEmpty() || !duplicateShared.isEmpty()) {
@@ -174,6 +193,7 @@ tasks.register('verifyProductionJar') {
                 it.endsWith('.class')
                         && !it.startsWith('io/github/janguenter/bluemap/chipped/')
                         && !sharedAthenaClasses.contains(it)
+                        && !sharedRenderCoreClasses.contains(it)
             }
             def forbidden = archiveEntries.findAll {
                 it.endsWith('.jar')
@@ -187,8 +207,11 @@ tasks.register('verifyProductionJar') {
                         || it.startsWith('net/minecraft/')
                         || it.startsWith('net/neoforged/')
                         || legacyAthenaClasses.contains(it)
+                        || legacyRenderCoreClasses.contains(it)
                         || (it.startsWith(sharedAthenaPackage) && !it.endsWith('/')
                             && !sharedAthenaClasses.contains(it))
+                        || (it.startsWith(sharedRenderCorePackage) && !it.endsWith('/')
+                            && !sharedRenderCoreClasses.contains(it))
             }
             if (!foreignClasses.isEmpty() || !forbidden.isEmpty()) {
                 throw new GradleException(
@@ -232,9 +255,11 @@ tasks.register('verifySourcesJar') {
                     'META-INF/NOTICE-bluemap-chipped-addon.md',
                     'META-INF/THIRD_PARTY-bluemap-chipped-addon.md',
                     'META-INF/bluemap-chipped/upstreams.json'
-            ] + sharedAthenaSources
+            ] + sharedAthenaSources + sharedRenderCoreSources
             def missing = required.findAll { !entries.contains(it) }
             def duplicateShared = sharedAthenaSources.findAll { shared ->
+                entries.count { it == shared } != 1
+            } + sharedRenderCoreSources.findAll { shared ->
                 entries.count { it == shared } != 1
             }
             if (!missing.isEmpty() || !duplicateShared.isEmpty()) {
@@ -247,6 +272,7 @@ tasks.register('verifySourcesJar') {
             def foreignJava = projectJava.findAll {
                 !it.startsWith('io/github/janguenter/bluemap/chipped/')
                         && !sharedAthenaSources.contains(it)
+                        && !sharedRenderCoreSources.contains(it)
             }
             def forbidden = archiveEntries.findAll {
                 it.endsWith('.class')
@@ -258,8 +284,11 @@ tasks.register('verifySourcesJar') {
                         || it.startsWith('net/minecraft/')
                         || it.startsWith('net/neoforged/')
                         || legacyAthenaSources.contains(it)
+                        || legacyRenderCoreSources.contains(it)
                         || (it.startsWith(sharedAthenaPackage) && !it.endsWith('/')
                             && !sharedAthenaSources.contains(it))
+                        || (it.startsWith(sharedRenderCorePackage) && !it.endsWith('/')
+                            && !sharedRenderCoreSources.contains(it))
             }
             if (projectJava.isEmpty() || !foreignJava.isEmpty() || !forbidden.isEmpty()) {
                 throw new GradleException(

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project_license": "MIT",
-  "implementation_lane": "commit-pinned-first-party-athena-model-source-with-local-emitter-profile-and-runtime-resources",
+  "implementation_lane": "commit-pinned-first-party-athena-model-and-render-core-sources-with-local-emitter-profile-and-runtime-resources",
   "baseline": {
     "pack": "All the Mons 1.2.0",
     "pack_commit": "c7bb230f21d14d26859d0b92548f089b3a493ad9",
@@ -62,6 +62,19 @@
     "declared_license": "MIT",
     "scope": "CtmTextureRole, CtmSelector, CtmConnections, CubeFace and CubeFace.Vec",
     "integration": "exact gitlink-pinned sources compiled into the consumer",
+    "artifact_bundled": false
+  },
+  "shared_render_core_module": {
+    "project": "BlueMap Add-on Render Core",
+    "repository": "https://github.com/jan-guenter/bluemap-addon-render-core",
+    "version": "0.1.0-alpha.1",
+    "tag": "v0.1.0-alpha.1",
+    "status": "released",
+    "commit": "faf53c9586a2c876b5a91db5ae3c2650a98f19ba",
+    "source_tree": "73870b3976ad3a17bf4bf350d9531b66d3d4a3af",
+    "declared_license": "MIT",
+    "scope": "FaceLighting and FaceLighting.Sample",
+    "integration": "exact gitlink-pinned source compiled into the consumer",
     "artifact_bundled": false
   },
   "third_party_content_bundled": false

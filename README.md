@@ -5,7 +5,7 @@ models on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-Version `0.1.0-alpha.2` is the source-consolidation candidate for the same
+Version `0.1.0-alpha.3` is a source-consolidation candidate for the same
 owner-accepted exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
@@ -28,11 +28,14 @@ clean restart and repeat verification, the canonical rendered-model audit,
 the required agent-browser sanity check, and owner visual inspection on
 2026-08-13.
 
-The candidate changes source ownership only. It compiles the four pure Athena
+The candidate changes source ownership only. It retains the four pure Athena
 connection and face classes from the released, commit-pinned
-`bluemap-athena-resource-models` `0.1.0-alpha.1` source module. Emitters,
-profiles, resource admission, routing, fallback, and visual behavior remain
-local and unchanged.
+`bluemap-athena-resource-models` `0.1.0-alpha.1` source module. It also compiles
+the exact face-light sampler from the released `bluemap-addon-render-core`
+`0.1.0-alpha.1` module at commit
+`faf53c9586a2c876b5a91db5ae3c2650a98f19ba`, source tree
+`73870b3976ad3a17bf4bf350d9531b66d3d4a3af`. Emitters, profiles, resource
+admission, routing, fallback, and visual behavior remain local and unchanged.
 
 ## Visual scope
 
@@ -69,17 +72,18 @@ git clone --recurse-submodules \
   https://github.com/jan-guenter/bluemap-chipped-addon.git
 ```
 
-For an existing clone, initialize both pinned source submodules before running
+For an existing clone, initialize all pinned development inputs before running
 Gradle:
 
 ```bash
 git submodule update --init --recursive -- \
-  tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models
+  tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models \
+  modules/bluemap-addon-render-core
 ```
 
-The settings preflight accepts only the committed toolkit and Athena-model
-gitlinks. It rejects an uninitialized, changed, dirty, incorrectly pinned, or
-source-tree-mismatched checkout.
+The settings preflight accepts only the committed toolkit, Athena-model, and
+render-core gitlinks. It rejects an uninitialized, changed, dirty, incorrectly
+pinned, or source-tree-mismatched checkout.
 
 ```bash
 gradle --no-daemon \
@@ -89,10 +93,11 @@ gradle --no-daemon \
   generateMetadataFileForAddonPublication verifyPinnedArtifacts
 ```
 
-CI reacquires both inputs ephemerally, verifies their exact bytes and the full
-resource/profile contract, and discards them. The add-on source-bundles only
-the four first-party MIT model classes. It bundles no upstream Chipped or
-Athena code or assets and no nested module JAR.
+CI reacquires both runtime inputs ephemerally, verifies their exact bytes and
+the full resource/profile contract, and discards them. The add-on
+source-bundles only the four first-party MIT model classes and one first-party
+MIT face-light class. It bundles no upstream Chipped or Athena code or assets
+and no nested module JAR.
 
 Tagged releases publish production/source JARs, POM, module metadata, and
 checksums on GitHub Releases and at Maven coordinates

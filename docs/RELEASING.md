@@ -7,8 +7,8 @@ metadata generation in one pass.
 
 Before tagging:
 
-1. Initialize both pinned submodules with
-   `git submodule update --init --recursive -- tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models`.
+1. Initialize all pinned submodules with
+   `git submodule update --init --recursive -- tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models modules/bluemap-addon-render-core`.
    Require the settings trust preflight without changing either gitlink.
 2. Confirm the reviewed commit, recursively clean repository, version,
    changelog, provenance, and exact profile.

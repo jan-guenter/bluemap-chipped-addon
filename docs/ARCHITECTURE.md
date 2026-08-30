@@ -14,7 +14,7 @@ dual exact-JAR + active-resource-schema gate
         |
 seven bounded Athena-family renderers
         |
-four commit-pinned pure model classes
+four commit-pinned pure model classes + one face-light sampler
         |
 operator-installed models and textures
 ```
@@ -39,6 +39,11 @@ The pure `CtmTextureRole`, `CtmSelector`, `CtmConnections`, and `CubeFace`
 classes compile from the exact released `bluemap-athena-resource-models`
 source tree. The module has no entrypoint or installed runtime. Every emitter,
 profile, resource gate, route, and fallback remains in this add-on.
+
+The `FaceLighting` sampler compiles from the exact commit-pinned
+`bluemap-addon-render-core` source tree. The source module has no entrypoint or
+installed runtime. The sampler preserves the existing transformed-face
+neighbor selection and maximum sky, block, and emission light behavior.
 
 - `ctm` samples the eight exact-state neighbors in each face plane, selects a
   texture per quadrant, and suppresses a face against the same block ID.
