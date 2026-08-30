@@ -5,7 +5,8 @@ models on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-Version `0.1.0-alpha.1` is the owner-accepted prerelease for one exact tuple:
+Version `0.1.0-alpha.2` is the source-consolidation candidate for the same
+owner-accepted exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
   `18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291`;
@@ -26,6 +27,12 @@ It passed pull-request CI, the exhaustive 1,642-placement staging gate, a
 clean restart and repeat verification, the canonical rendered-model audit,
 the required agent-browser sanity check, and owner visual inspection on
 2026-08-13.
+
+The candidate changes source ownership only. It compiles the four pure Athena
+connection and face classes from the released, commit-pinned
+`bluemap-athena-resource-models` `0.1.0-alpha.1` source module. Emitters,
+profiles, resource admission, routing, fallback, and visual behavior remain
+local and unchanged.
 
 ## Visual scope
 
@@ -62,15 +69,17 @@ git clone --recurse-submodules \
   https://github.com/jan-guenter/bluemap-chipped-addon.git
 ```
 
-For an existing clone, initialize the pinned development toolkit before
-running Gradle:
+For an existing clone, initialize both pinned source submodules before running
+Gradle:
 
 ```bash
-git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+git submodule update --init --recursive -- \
+  tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models
 ```
 
-The settings preflight accepts only the committed toolkit gitlink at its exact
-expected commit and rejects an uninitialized, changed, or dirty submodule.
+The settings preflight accepts only the committed toolkit and Athena-model
+gitlinks. It rejects an uninitialized, changed, dirty, incorrectly pinned, or
+source-tree-mismatched checkout.
 
 ```bash
 gradle --no-daemon \
@@ -81,8 +90,9 @@ gradle --no-daemon \
 ```
 
 CI reacquires both inputs ephemerally, verifies their exact bytes and the full
-resource/profile contract, and discards them. The build bundles no Chipped or
-Athena assets or code.
+resource/profile contract, and discards them. The add-on source-bundles only
+the four first-party MIT model classes. It bundles no upstream Chipped or
+Athena code or assets and no nested module JAR.
 
 Tagged releases publish production/source JARs, POM, module metadata, and
 checksums on GitHub Releases and at Maven coordinates

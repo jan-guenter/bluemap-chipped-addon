@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project_license": "MIT",
-  "implementation_lane": "clean-room-behavior-oracle-and-runtime-resources",
+  "implementation_lane": "commit-pinned-first-party-athena-model-source-with-local-emitter-profile-and-runtime-resources",
   "baseline": {
     "pack": "All the Mons 1.2.0",
     "pack_commit": "c7bb230f21d14d26859d0b92548f089b3a493ad9",
@@ -51,6 +51,18 @@
       "commit": "deb1209837a201f7ac9f0f3a616521dc1831b78e",
       "status": "release-correlated-not-attested"
     }
+  },
+  "shared_source_module": {
+    "project": "BlueMap Athena Resource Models",
+    "repository": "https://github.com/jan-guenter/bluemap-athena-resource-models",
+    "version": "0.1.0-alpha.1",
+    "tag": "v0.1.0-alpha.1",
+    "commit": "4a503a63f7f10b7c414c6c1228207a5ba00bfd54",
+    "source_tree": "882689c2f9a0875547f4e30aefd68659103d5046",
+    "declared_license": "MIT",
+    "scope": "CtmTextureRole, CtmSelector, CtmConnections, CubeFace and CubeFace.Vec",
+    "integration": "exact gitlink-pinned sources compiled into the consumer",
+    "artifact_bundled": false
   },
   "third_party_content_bundled": false
 }

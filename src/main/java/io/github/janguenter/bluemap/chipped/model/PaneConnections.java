@@ -3,6 +3,8 @@
  */
 package io.github.janguenter.bluemap.chipped.model;
 
+import io.github.janguenter.bluemap.resource.athena.model.CubeFace;
+
 import java.util.Map;
 
 /** Exact persisted horizontal pane connection booleans. */

@@ -3,6 +3,8 @@
  */
 package io.github.janguenter.bluemap.chipped.model;
 
+import io.github.janguenter.bluemap.resource.athena.model.CubeFace;
+
 /** Exact stable 2x2 absolute-coordinate tile selector from the Athena behavior oracle. */
 public final class GiantTextureSelector {
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.0-alpha.2 - 2026-08-30
+
+- Source-bundle the released `bluemap-athena-resource-models`
+  `0.1.0-alpha.1` module at commit
+  `4a503a63f7f10b7c414c6c1228207a5ba00bfd54`.
+- Remove the four local duplicate model sources while retaining the exhaustive
+  256-mask, face-basis, giant, pillar, pane, emitter, gallery, and exact-input
+  tests.
+- Fail closed when the module gitlink, index, checkout HEAD, source tree, or
+  worktree differs from the reviewed pin. Keep every Chipped-specific profile,
+  emitter, route, and fallback boundary local.
+
 ## 0.1.0-alpha.1 - 2026-08-13
 
 - Add one exact Chipped 4.0.2 plus Athena 4.0.6 profile for ATMons 1.2.0.

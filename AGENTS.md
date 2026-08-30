@@ -13,6 +13,7 @@ not part of the root orchestration repository.
 | BlueMap | backport `5.22-agent.backport-5.22-mc1.21.1-2`, commit `9be321df995a1103808621d529eb72773e719d4d` |
 | Chipped | `4.0.2`, 15,020,578 bytes, SHA-256 `18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291` |
 | Athena | `4.0.6`, 99,944 bytes, SHA-256 `43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5` |
+| Athena model source module | `0.1.0-alpha.1`, commit `4a503a63f7f10b7c414c6c1228207a5ba00bfd54`, source tree `882689c2f9a0875547f4e30aefd68659103d5046` |
 
 A new pack or either changed artifact is a fresh evidence, implementation,
 and review task.
@@ -32,6 +33,9 @@ and review task.
   unsupported appearance proxy use BlueMap's original path atomically.
 - The implementation is clean-room MIT. Never copy/adapt Chipped or Athena
   source or package their classes, models, textures, captures, or meshes.
+- Compile the four pure Athena connection and face classes from the exact
+  released source module. Keep emitters, profiles, admission, routing, and
+  fallback local. Never install or nest the module JAR.
 
 ## Validation cadence
 
@@ -39,7 +43,8 @@ Develop in one coherent tranche. Pull-request CI is the authoritative full
 gate; do not repeat it locally after small edits:
 
 ```bash
-git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+git submodule update --init --recursive -- \
+  tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models
 gradle --no-daemon \
   -PchippedJar=/absolute/path/chipped-neoforge-1.21.1-4.0.2.jar \
   -PathenaJar=/absolute/path/athena-neoforge-1.21.1-4.0.6.jar \

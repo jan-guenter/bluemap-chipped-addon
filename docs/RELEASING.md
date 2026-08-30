@@ -7,13 +7,16 @@ metadata generation in one pass.
 
 Before tagging:
 
-1. Confirm the reviewed commit, clean repository, version, changelog,
-   provenance, and exact profile.
-2. Require passing PR CI and inspect its production JAR/publication metadata.
-3. Complete the single staging lifecycle in [STAGING.md](STAGING.md), including
+1. Initialize both pinned submodules with
+   `git submodule update --init --recursive -- tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models`.
+   Require the settings trust preflight without changing either gitlink.
+2. Confirm the reviewed commit, recursively clean repository, version,
+   changelog, provenance, and exact profile.
+3. Require passing PR CI and inspect its production JAR/publication metadata.
+4. Complete the single staging lifecycle in [STAGING.md](STAGING.md), including
    the exhaustive placement census, one save/restart, bounded render, browser
    sanity check, and owner visual acceptance.
-4. Merge version changes through a PR and create annotated tag
+5. Merge version changes through a PR and create annotated tag
    `v<addon_version>` on the reviewed main commit.
 
 The tag workflow rebuilds from the exact inputs, publishes immutable GitHub

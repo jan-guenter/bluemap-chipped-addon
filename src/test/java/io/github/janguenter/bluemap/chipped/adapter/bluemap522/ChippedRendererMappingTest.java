@@ -3,7 +3,7 @@ package io.github.janguenter.bluemap.chipped.adapter.bluemap522;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import io.github.janguenter.bluemap.chipped.model.CubeFace;
+import io.github.janguenter.bluemap.resource.athena.model.CubeFace;
 import org.junit.jupiter.api.Test;
 
 class ChippedRendererMappingTest {
