@@ -3,6 +3,8 @@
  */
 package io.github.janguenter.bluemap.chipped.model;
 
+import io.github.janguenter.bluemap.resource.athena.model.CubeFace;
+
 /** Persisted pillar axis and its exact Athena first/second chain directions. */
 public enum PillarAxis {
     X(new CubeFace.Vec(-1, 0, 0), new CubeFace.Vec(1, 0, 0)),

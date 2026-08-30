@@ -14,6 +14,8 @@ dual exact-JAR + active-resource-schema gate
         |
 seven bounded Athena-family renderers
         |
+four commit-pinned pure model classes
+        |
 operator-installed models and textures
 ```
 
@@ -32,6 +34,11 @@ all 5,947 installed texture keys before atlas filtering and caches only the
 metadata-only parsed definitions. It bundles no Chipped or Athena resource.
 
 ## Renderer families
+
+The pure `CtmTextureRole`, `CtmSelector`, `CtmConnections`, and `CubeFace`
+classes compile from the exact released `bluemap-athena-resource-models`
+source tree. The module has no entrypoint or installed runtime. Every emitter,
+profile, resource gate, route, and fallback remains in this add-on.
 
 - `ctm` samples the eight exact-state neighbors in each face plane, selects a
   texture per quadrant, and suppresses a face against the same block ID.

@@ -2,7 +2,9 @@
 
 The machine-readable lock lives in
 `src/main/resources/bluemap-chipped/profiles/exact-artifacts.json`, the exact
-profile directory beside it, and `provenance/upstreams.json`.
+profile directory beside it, and `provenance/upstreams.json`. Candidate release
+identity is recorded separately in `provenance/release.json`; it is not packed
+into the add-on JAR.
 
 The exact All the Mons 1.2.0 server archive members establish the Chipped
 4.0.2 and installed Athena 4.0.6 byte identities. The metadata generator
@@ -28,3 +30,11 @@ Repository/build/release mechanics and narrow BlueMap adapter/emitter patterns
 were independently authored from the owner's MIT Pipez and Sophisticated
 projects. No family profile, resource fact, state decoder, or renderer was
 transferred.
+
+Version `0.1.0-alpha.2` source-bundles four pure first-party model classes from
+the released MIT `bluemap-athena-resource-models` `0.1.0-alpha.1` module at
+commit `4a503a63f7f10b7c414c6c1228207a5ba00bfd54`, source tree
+`882689c2f9a0875547f4e30aefd68659103d5046`. The module records their earliest
+matching Chipped history commit and exhaustive algorithm parity. Its JAR is
+neither installed nor nested. The emitter, exact profile, resource admission,
+routing, and stock fallback remain local.
