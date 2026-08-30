@@ -59,6 +59,21 @@ class ReleaseContractTest(unittest.TestCase):
         )
 
     def test_alpha6_candidate_records_exact_523_source_modules(self) -> None:
+        self.assertEqual(
+            {
+                "module_repository":
+                    "https://github.com/jan-guenter/bluemap-athena-resource-models",
+                "module_version": "0.1.0-alpha.1",
+                "module_tag": "v0.1.0-alpha.1",
+                "module_commit": "4a503a63f7f10b7c414c6c1228207a5ba00bfd54",
+                "module_source_tree": "882689c2f9a0875547f4e30aefd68659103d5046",
+                "compiled_source_count": 4,
+                "standalone_module_jar_bundled": False,
+                "standalone_module_jar_installed": False,
+            },
+            self.release["athena_model_source"],
+        )
+
         migration = self.release["render_core_523_migration"]
         self.assertEqual("0.1.0-alpha.2", migration["module_version"])
         self.assertEqual("v0.1.0-alpha.2", migration["module_tag"])
