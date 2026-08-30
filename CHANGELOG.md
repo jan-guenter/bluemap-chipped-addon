@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.3 - 2026-08-30
+
+- Source-bundle `FaceLighting` from the commit-pinned
+  `bluemap-addon-render-core` `0.1.0-alpha.1` release and remove the exact
+  local duplicate.
+- Keep Chipped emission, profile admission, routing, fallback, gallery, and
+  visual behavior unchanged.
+- Reject a missing, changed, dirty, incorrectly pinned, or source-tree-mismatched
+  render-core checkout and reject legacy or unexpected shared classes in both
+  publication JARs.
+
 ## 0.1.0-alpha.2 - 2026-08-30
 
 - Source-bundle the released `bluemap-athena-resource-models`

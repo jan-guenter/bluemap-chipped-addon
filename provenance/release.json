@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
   "status": "owner-accepted-release-candidate",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "release_date": "2026-08-30",
   "repository": "https://github.com/jan-guenter/bluemap-chipped-addon",
-  "tag": "v0.1.0-alpha.2",
-  "maven_coordinate": "io.github.jan-guenter:bluemap-chipped-addon:0.1.0-alpha.2",
+  "tag": "v0.1.0-alpha.3",
+  "maven_coordinate": "io.github.jan-guenter:bluemap-chipped-addon:0.1.0-alpha.3",
   "inherited_visual_acceptance": {
-    "baseline_version": "0.1.0-alpha.1",
-    "baseline_release_commit": "c474a82b6bfd1b4173d119cb1e053a5458167e4b",
-    "baseline_release_tree": "ff474572946a80d2b932dbbb2f1dd21c6d672415",
-    "baseline_production_jar_size": 598326,
-    "baseline_production_jar_sha256": "b43c238b764e068db4009ab16fc2af140b54d84feaf37bd6577602e1dc97fd21",
+    "baseline_version": "0.1.0-alpha.2",
+    "baseline_release_commit": "cc5ab1b2af6e447db775f12e659d3dea980350cb",
+    "baseline_release_tree": "3f2af05b2789c583e2d9e63b499f353e61eca888",
+    "baseline_production_jar_size": 599702,
+    "baseline_production_jar_sha256": "2bf02cecde1f74cbb3be528710823367db5e487aef709a0aef0f64aeb2ee4713",
     "visual_acceptance": true,
-    "scope": "The accepted Chipped renderer and gallery behavior are unchanged; alpha.2 replaces four local pure-model sources with the package-neutral shared Athena source module."
+    "scope": "The accepted Chipped renderer and gallery behavior are unchanged; alpha.3 replaces the local face-light sampler with the exact shared render-core source."
   },
   "final_release_artifacts": {
     "production_jar": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.2.jar",
-      "size": 599702,
-      "sha256": "2bf02cecde1f74cbb3be528710823367db5e487aef709a0aef0f64aeb2ee4713"
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.3.jar",
+      "size": 601011,
+      "sha256": "b5a1e7184f98ebea44fc085fcc5dfcd54096fafae9ae158915476b33df1f9cac"
     },
     "sources_jar": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.2-sources.jar",
-      "size": 558620,
-      "sha256": "f039709ee4741c6f92c208a1a5934b2f3aebfed15e5328e50f785cd0bb206d1c"
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.3-sources.jar",
+      "size": 559912,
+      "sha256": "02e43090ca15ef9f48b58a306b186e9976b55cd64ed7a8ee6109398b6a2e267b"
     },
     "pom": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.2.pom",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.3.pom",
       "size": 1341,
-      "sha256": "db6addec7b3c0e32c3b71ada5b670b6ad8e5fe60413e9b2a93b6199ed6d7b9c7"
+      "sha256": "cd27953c5fe1b3d184fc6d1d07226cbdc826e7bfb95d887f084517d57c2a2b9b"
     },
     "gradle_module": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.2.module.json",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.3.module.json",
       "size": 2820,
-      "sha256": "5b3642845ffa163a57355a3813055c6333d2b467138b6c5d68cbcc7e842e1db4"
+      "sha256": "52b856089a9e4d6ac0287c8f3e31d3cfeb44a75aa05b91fd831504e9a9240d09"
     }
   },
   "athena_model_migration": {
@@ -44,6 +44,15 @@
     "module_commit": "4a503a63f7f10b7c414c6c1228207a5ba00bfd54",
     "module_source_tree": "882689c2f9a0875547f4e30aefd68659103d5046",
     "removed_local_model_sources": 4,
+    "renderer_or_gallery_behavior_change": false
+  },
+  "render_core_migration": {
+    "module_repository": "https://github.com/jan-guenter/bluemap-addon-render-core",
+    "module_version": "0.1.0-alpha.1",
+    "module_tag": "v0.1.0-alpha.1",
+    "module_commit": "faf53c9586a2c876b5a91db5ae3c2650a98f19ba",
+    "module_source_tree": "73870b3976ad3a17bf4bf350d9531b66d3d4a3af",
+    "removed_local_sources": 1,
     "renderer_or_gallery_behavior_change": false
   },
   "verification": {

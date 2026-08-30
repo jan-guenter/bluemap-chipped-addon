@@ -38,3 +38,13 @@ commit `4a503a63f7f10b7c414c6c1228207a5ba00bfd54`, source tree
 matching Chipped history commit and exhaustive algorithm parity. Its JAR is
 neither installed nor nested. The emitter, exact profile, resource admission,
 routing, and stock fallback remain local.
+
+Version `0.1.0-alpha.3` also source-bundles the exact first-party
+`FaceLighting` class from the MIT `bluemap-addon-render-core`
+`0.1.0-alpha.1` release at commit
+`faf53c9586a2c876b5a91db5ae3c2650a98f19ba`, source tree
+`73870b3976ad3a17bf4bf350d9531b66d3d4a3af`. Only the package and public API
+visibility differ from the removed local class; executable behavior is
+unchanged. The module records the original Sophisticated add-on commit, the
+frozen source hash, and all seven exact portfolio matches. Its JAR is neither
+installed nor nested.
