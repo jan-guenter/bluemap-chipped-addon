@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-alpha.5 - 2026-08-30
+
+- Preserve alpha.4's exact feature-backport runtime and shared adapter source.
+- Stage review and tag bundles through one tool that writes the workflow's
+  `./`-prefixed checksum lines and verifies all five payload identities against
+  release provenance before upload.
+- Supersede immutable alpha.4 because its tagged provenance recorded a locally
+  generated checksum-file identity without the workflow's `./` prefixes. Its
+  four substantive release payloads remain unchanged and valid.
+
 ## 0.1.0-alpha.4 - 2026-08-30
 
 - Source-bundle four bootstrap helpers from the commit-pinned

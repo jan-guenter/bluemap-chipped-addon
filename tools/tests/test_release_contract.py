@@ -12,45 +12,45 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReleaseContractTest(unittest.TestCase):
-    def test_alpha4_candidate_seals_all_publication_payloads(self) -> None:
+    def test_alpha5_candidate_seals_all_publication_payloads(self) -> None:
         release = json.loads((ROOT / "provenance/release.json").read_text())
 
         self.assertEqual(1, release["schema_version"])
         self.assertEqual("owner-accepted-release-candidate", release["status"])
-        self.assertEqual("0.1.0-alpha.4", release["version"])
-        self.assertEqual("v0.1.0-alpha.4", release["tag"])
+        self.assertEqual("0.1.0-alpha.5", release["version"])
+        self.assertEqual("v0.1.0-alpha.5", release["tag"])
         self.assertEqual(
             {
                 "production_jar": {
-                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.jar",
+                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.jar",
                     "size": 603_595,
-                    "sha256": "05ebaea5e4053b92c76819153a417a47277a8464569a2bd261b96fec776597ea",
+                    "sha256": "6dc89c1f4a162177c703aef2d683e921cf62dbd9aac562ae0af9caed0d422624",
                 },
                 "sources_jar": {
-                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.4-sources.jar",
+                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.5-sources.jar",
                     "size": 562_320,
                     "sha256": "3daa5c235dae2ba96e227641120e0a026b5d2017cb3af44541a897d875c36221",
                 },
                 "pom": {
-                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.pom",
+                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.pom",
                     "size": 1_341,
-                    "sha256": "c72c2a126fb41d17f87bf51517c9b7aab5b477703ceeb4fd4345fe6901ab80de",
+                    "sha256": "c67dcce4dbeaea23d761522167a2c7d3051013c7d4e32475679aad95a0ee0a49",
                 },
                 "gradle_module": {
-                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.module.json",
+                    "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.module.json",
                     "size": 2_820,
-                    "sha256": "65a2698c0f8a7217268663dcda790195072710dbcc0205d4c9ce5110475234fc",
+                    "sha256": "dad8be96c27476ad0fd7d39bc087431375b80809e4134d22b534210c7bd51a5b",
                 },
                 "sha256sums": {
                     "file_name": "SHA256SUMS",
-                    "size": 440,
-                    "sha256": "26418b06f3695d9f86c1bb73bdd77f1f1affc28e92d3eb9759515803597a4859",
+                    "size": 448,
+                    "sha256": "c96619642be0e88bb5dd60897295391c7c14ca048cf32ac845b9bed5822171b0",
                 },
             },
             release["final_release_artifacts"],
         )
 
-    def test_alpha4_candidate_records_all_source_modules(self) -> None:
+    def test_alpha5_candidate_records_all_source_modules(self) -> None:
         release = json.loads((ROOT / "provenance/release.json").read_text())
 
         self.assertEqual(
@@ -124,11 +124,59 @@ class ReleaseContractTest(unittest.TestCase):
         )
         self.assertEqual(
             {
+                "superseded_version": "0.1.0-alpha.4",
+                "superseded_tag": "v0.1.0-alpha.4",
+                "superseded_release_commit":
+                    "b615af00c9255e9178f7358fc2c290364b7bca25",
+                "substantive_release_payloads_valid": True,
+                "recorded_checksum_file": {
+                    "size": 440,
+                    "sha256":
+                        "26418b06f3695d9f86c1bb73bdd77f1f1affc28e92d3eb9759515803597a4859",
+                    "path_prefix": "none",
+                },
+                "published_checksum_file": {
+                    "size": 448,
+                    "sha256":
+                        "666710cb002cdabd8b9be142f5561ebc13ff975a24b9911a568f3178a70fef43",
+                    "path_prefix": "./",
+                },
+                "alpha4_tag_or_release_mutated": False,
+                "correction": (
+                    "Alpha.5 stages CI and tag bundles with one tool and verifies every "
+                    "workflow-formatted payload against release provenance before "
+                    "publication."
+                ),
+            },
+            release["post_release_checksum_correction"],
+        )
+        self.assertEqual(
+            {
+                "baseline_production_jar_sha256":
+                    "05ebaea5e4053b92c76819153a417a47277a8464569a2bd261b96fec776597ea",
+                "baseline_sources_jar_sha256":
+                    "3daa5c235dae2ba96e227641120e0a026b5d2017cb3af44541a897d875c36221",
+                "production_archive_entries": 52,
+                "unchanged_production_entries": 50,
+                "changed_production_entries": [
+                    "META-INF/MANIFEST.MF",
+                    "bluemap.addon.json",
+                ],
+                "sources_jar_byte_identical": True,
+                "runtime_classes_or_resources_changed": False,
+                "gallery_sources_changed": False,
+                "visual_staging_inherited": True,
+            },
+            release["alpha4_to_alpha5_equivalence"],
+        )
+        self.assertEqual(
+            {
                 "production_jar_exact_byte_gate": True,
                 "sources_jar_exact_byte_gate": True,
                 "publication_metadata_exact_byte_gate": True,
                 "adapter_api_source_boundary_gate": True,
                 "exact_feature_backport_runtime_identity_gate": True,
+                "workflow_checksum_format_gate": True,
                 "exact_input_gate": True,
                 "reproducibility_gate": True,
                 "hostile_gitlink_trust_probes": True,

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "status": "owner-accepted-release-candidate",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "release_date": "2026-08-30",
   "repository": "https://github.com/jan-guenter/bluemap-chipped-addon",
-  "tag": "v0.1.0-alpha.4",
-  "maven_coordinate": "io.github.jan-guenter:bluemap-chipped-addon:0.1.0-alpha.4",
+  "tag": "v0.1.0-alpha.5",
+  "maven_coordinate": "io.github.jan-guenter:bluemap-chipped-addon:0.1.0-alpha.5",
   "inherited_visual_acceptance": {
     "baseline_version": "0.1.0-alpha.2",
     "baseline_release_commit": "cc5ab1b2af6e447db775f12e659d3dea980350cb",
@@ -13,33 +13,33 @@
     "baseline_production_jar_size": 599702,
     "baseline_production_jar_sha256": "2bf02cecde1f74cbb3be528710823367db5e487aef709a0aef0f64aeb2ee4713",
     "visual_acceptance": true,
-    "scope": "The accepted Chipped profile, gallery, renderers and emitters are unchanged. Alpha.4 source-bundles the shared adapter helpers and accepts only the exact feature-backport runtime identity."
+    "scope": "The accepted Chipped profile, gallery, renderers and emitters are unchanged. Alpha.5 retains alpha.4's shared adapter migration and exact feature-backport runtime while correcting release checksum provenance."
   },
   "final_release_artifacts": {
     "production_jar": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.jar",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.jar",
       "size": 603595,
-      "sha256": "05ebaea5e4053b92c76819153a417a47277a8464569a2bd261b96fec776597ea"
+      "sha256": "6dc89c1f4a162177c703aef2d683e921cf62dbd9aac562ae0af9caed0d422624"
     },
     "sources_jar": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.4-sources.jar",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.5-sources.jar",
       "size": 562320,
       "sha256": "3daa5c235dae2ba96e227641120e0a026b5d2017cb3af44541a897d875c36221"
     },
     "pom": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.pom",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.pom",
       "size": 1341,
-      "sha256": "c72c2a126fb41d17f87bf51517c9b7aab5b477703ceeb4fd4345fe6901ab80de"
+      "sha256": "c67dcce4dbeaea23d761522167a2c7d3051013c7d4e32475679aad95a0ee0a49"
     },
     "gradle_module": {
-      "file_name": "bluemap-chipped-addon-0.1.0-alpha.4.module.json",
+      "file_name": "bluemap-chipped-addon-0.1.0-alpha.5.module.json",
       "size": 2820,
-      "sha256": "65a2698c0f8a7217268663dcda790195072710dbcc0205d4c9ce5110475234fc"
+      "sha256": "dad8be96c27476ad0fd7d39bc087431375b80809e4134d22b534210c7bd51a5b"
     },
     "sha256sums": {
       "file_name": "SHA256SUMS",
-      "size": 440,
-      "sha256": "26418b06f3695d9f86c1bb73bdd77f1f1affc28e92d3eb9759515803597a4859"
+      "size": 448,
+      "sha256": "c96619642be0e88bb5dd60897295391c7c14ca048cf32ac845b9bed5822171b0"
     }
   },
   "athena_model_migration": {
@@ -99,12 +99,45 @@
       "consumer_tests_passed": 25
     }
   },
+  "post_release_checksum_correction": {
+    "superseded_version": "0.1.0-alpha.4",
+    "superseded_tag": "v0.1.0-alpha.4",
+    "superseded_release_commit": "b615af00c9255e9178f7358fc2c290364b7bca25",
+    "substantive_release_payloads_valid": true,
+    "recorded_checksum_file": {
+      "size": 440,
+      "sha256": "26418b06f3695d9f86c1bb73bdd77f1f1affc28e92d3eb9759515803597a4859",
+      "path_prefix": "none"
+    },
+    "published_checksum_file": {
+      "size": 448,
+      "sha256": "666710cb002cdabd8b9be142f5561ebc13ff975a24b9911a568f3178a70fef43",
+      "path_prefix": "./"
+    },
+    "alpha4_tag_or_release_mutated": false,
+    "correction": "Alpha.5 stages CI and tag bundles with one tool and verifies every workflow-formatted payload against release provenance before publication."
+  },
+  "alpha4_to_alpha5_equivalence": {
+    "baseline_production_jar_sha256": "05ebaea5e4053b92c76819153a417a47277a8464569a2bd261b96fec776597ea",
+    "baseline_sources_jar_sha256": "3daa5c235dae2ba96e227641120e0a026b5d2017cb3af44541a897d875c36221",
+    "production_archive_entries": 52,
+    "unchanged_production_entries": 50,
+    "changed_production_entries": [
+      "META-INF/MANIFEST.MF",
+      "bluemap.addon.json"
+    ],
+    "sources_jar_byte_identical": true,
+    "runtime_classes_or_resources_changed": false,
+    "gallery_sources_changed": false,
+    "visual_staging_inherited": true
+  },
   "verification": {
     "production_jar_exact_byte_gate": true,
     "sources_jar_exact_byte_gate": true,
     "publication_metadata_exact_byte_gate": true,
     "adapter_api_source_boundary_gate": true,
     "exact_feature_backport_runtime_identity_gate": true,
+    "workflow_checksum_format_gate": true,
     "exact_input_gate": true,
     "reproducibility_gate": true,
     "hostile_gitlink_trust_probes": true

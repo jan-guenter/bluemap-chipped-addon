@@ -3,7 +3,10 @@
 Pull-request CI is the authoritative clean gate. It reacquires both exact
 third-party artifacts and runs profile generation checks, Python and Java
 tests, compilation, packaging boundaries, exact-input verification, and Maven
-metadata generation in one pass.
+metadata generation in one pass. After the build, `tools/stage_release.py`
+creates the same five-file bundle as the tag workflow, including the exact
+`./`-prefixed `SHA256SUMS` format, and rejects any byte identity that differs
+from `provenance/release.json`.
 
 Before tagging:
 
@@ -22,3 +25,8 @@ Before tagging:
 The tag workflow rebuilds from the exact inputs, publishes immutable GitHub
 prerelease assets and matching GitHub Packages coordinates, and deploys
 nothing. Never move a published tag or replace a release asset.
+
+A correction release may inherit the recorded visual acceptance only when its
+release provenance proves that every runtime class, resource, and gallery input
+is unchanged. Versioned manifest or add-on metadata may differ. Record the
+entry comparison and the reason for the correction before tagging.

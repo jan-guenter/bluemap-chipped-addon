@@ -106,15 +106,10 @@ jobs:
 
       - name: Prepare release bundle
         run: |
-          mkdir release
-          cp "build/libs/bluemap-chipped-addon-${VERSION}.jar" release/
-          cp "build/libs/bluemap-chipped-addon-${VERSION}-sources.jar" release/
-          cp build/publications/addon/pom-default.xml \
-            "release/bluemap-chipped-addon-${VERSION}.pom"
-          cp build/publications/addon/module.json \
-            "release/bluemap-chipped-addon-${VERSION}.module.json"
-          cd release
-          sha256sum -- ./* > SHA256SUMS
+          python3 tools/stage_release.py \
+            --version "${VERSION}" \
+            --output release \
+            --verify-provenance provenance/release.json
 
       - name: Inspect immutable Maven version
         id: maven
