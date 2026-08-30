@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: MIT */
-package io.github.janguenter.bluemap.chipped.adapter.bluemap522;
+package io.github.janguenter.bluemap.chipped.adapter.bluemap523;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

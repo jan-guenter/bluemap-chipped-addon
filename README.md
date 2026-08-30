@@ -1,11 +1,11 @@
 # BlueMap Chipped Add-on
 
-An exact-profile BlueMap 5.22 add-on for Chipped's Athena-backed connected
-models on All the Mons 1.2.0.
+An exact-profile BlueMap add-on for Chipped's Athena-backed connected models
+on All the Mons 1.2.0.
 
 ## Status and compatibility
 
-Version `0.1.0-alpha.3` is a source-consolidation candidate for the same
+Version `0.1.0-alpha.4` is a source-consolidation candidate for the same
 owner-accepted exact tuple:
 
 - Chipped `4.0.2`, 15,020,578 bytes, SHA-256
@@ -13,8 +13,9 @@ owner-accepted exact tuple:
 - Athena `4.0.6`, 99,944 bytes, SHA-256
   `43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5`;
 - Minecraft `1.21.1`, NeoForge `21.1.248`, Java `21`;
-- BlueMap backport `5.22-agent.backport-5.22-mc1.21.1-2` at
-  `9be321df995a1103808621d529eb72773e719d4d`.
+- BlueMap feature backport
+  `5.22-feature.backport-5.23-stateless-java-web-server-46` at
+  `7e07f4e74ec1e92a6ead9aa1e66054af3e133aac`.
 
 The route activates only when both installed JARs match exactly and every
 active owned JSON resource retains its pinned schema and texture IDs. Pixel
@@ -36,6 +37,11 @@ the exact face-light sampler from the released `bluemap-addon-render-core`
 `faf53c9586a2c876b5a91db5ae3c2650a98f19ba`, source tree
 `73870b3976ad3a17bf4bf350d9531b66d3d4a3af`. Emitters, profiles, resource
 admission, routing, fallback, and visual behavior remain local and unchanged.
+It compiles four bootstrap helpers from the
+`bluemap-addon-adapter-api` `0.1.0-alpha.2` release target at commit
+`e81f08bc4bfbf02d810ec8949a019130e2e61634`, source tree
+`2f974c9bb2ba13888d69682f86f30f58922d30eb`. Chipped selects only the exact
+feature-backport runtime identity.
 
 ## Visual scope
 
@@ -78,12 +84,12 @@ Gradle:
 ```bash
 git submodule update --init --recursive -- \
   tooling/bluemap-addon-toolkit modules/bluemap-athena-resource-models \
-  modules/bluemap-addon-render-core
+  modules/bluemap-addon-render-core modules/bluemap-addon-adapter-api
 ```
 
-The settings preflight accepts only the committed toolkit, Athena-model, and
-render-core gitlinks. It rejects an uninitialized, changed, dirty, incorrectly
-pinned, or source-tree-mismatched checkout.
+The settings preflight accepts only the committed toolkit, Athena-model,
+render-core, and adapter API gitlinks. It rejects an uninitialized, changed,
+dirty, incorrectly pinned, or source-tree-mismatched checkout.
 
 ```bash
 gradle --no-daemon \
@@ -95,9 +101,9 @@ gradle --no-daemon \
 
 CI reacquires both runtime inputs ephemerally, verifies their exact bytes and
 the full resource/profile contract, and discards them. The add-on
-source-bundles only the four first-party MIT model classes and one first-party
-MIT face-light class. It bundles no upstream Chipped or Athena code or assets
-and no nested module JAR.
+source-bundles only the four first-party MIT model classes, one first-party
+MIT face-light class, and four first-party MIT adapter helpers. It bundles no
+upstream Chipped or Athena code or assets and no nested module JAR.
 
 Tagged releases publish production/source JARs, POM, module metadata, and
 checksums on GitHub Releases and at Maven coordinates

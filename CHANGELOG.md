@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-alpha.4 - 2026-08-30
+
+- Source-bundle four bootstrap helpers from the commit-pinned
+  `bluemap-addon-adapter-api` `0.1.0-alpha.2` release target.
+- Remove the local runtime compatibility and resource-extension wrappers plus
+  the inline registry and synthetic-dispatch implementations.
+- Select only the audited BlueMap 5.23 feature-backport runtime identity. Keep
+  Chipped renderers, factories, profiles, routes, failure reasons, fallback,
+  and gallery behavior local.
+- Reject a missing, changed, dirty, incorrectly pinned, or source-tree-mismatched
+  adapter API checkout and reject displaced or unexpected shared classes in
+  both publication JARs.
+
 ## 0.1.0-alpha.3 - 2026-08-30
 
 - Source-bundle `FaceLighting` from the commit-pinned
